@@ -36,7 +36,7 @@ class Cliente(models.Model):
     domicilio= models.TextField(max_length=200,help_text='Escribe tu referencia: ')
     
     def __str__(self):
-        return f'{self.Nombre}{self.apellido}'
+        return f'{self.Nombre}{self.Apellido}'
     class Meta:
         db_table = 'Cliente'
         managed = True
